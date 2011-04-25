@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="https://github.com/woome/tache/raw/release_201104250234/jquery.tache.js"></script>
+    </head>
+    <body>
+        <h1 id="header">Mustache</h1>
+        <script>
+            jQuery(document).ready(function () {
+               console.log("inside ready");
+               var res = jQuery.tache('<a href="{{url}}" title="{{title}}">{{title}}</a>', {
+                     url: 'http://github.com/woome/tache',
+                     title: 'tache - the david niven of mustache libs'
+                   }
+               );
+               console.log(res);
+               jQuery("#header").after(res);
+              }
+            );
+        </script>
+    </body>
+</html>
