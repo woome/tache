@@ -1,0 +1,50 @@
+The
+[http://en.wikipedia.org/wiki/File:David_Niven_Allan_Warren.jpg|David Niven]
+of  mustache template languages for javascript.
+
+There are quite a few mustache implementations for Javascript and
+jQuery. Most implement a rich set  of the
+[http://mustache.github.com/|mustache syntax]. That's great but some
+people (including me) don't want all that. I prefer to do conditionals
+and loops in my javascript, not in my template language. 
+
+I would like to get rid of string concatentation though and that is
+what tache is for.
+
+So tache only implements interpolation. Here is an example web page:
+
+{{{
+<html>
+<head>
+ <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+ <script type="text/javascript" src="http://tache"></script>
+</head>
+<body>
+ <script>
+  jQuery.tache('<a href="{{url}}" title="{{title}}">{{title}}</a>', {
+        url: 'http://github.com/woome/tache',
+        title: 'tache - the david niven of mustache libs'
+      }
+    );
+ </script>
+</body>
+</html>
+}}}
+
+That's all it does.
+
+The formal specification is:
+
+{{{
+tache(template, data)
+}}}
+
+ * {{{template}}}
+ ** the tache template to use
+ ** {{{ {{identifier}} }}} is used to indicate interpolation from the data
+ ** the identifier must be a member of the data array
+ * {{{data}}}
+ ** the array of data that is referenced in the template
+ ** the identifiers used in the template MUST exist
+ ** extra identifiers not used in the template MAY exist
+
