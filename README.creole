@@ -1,10 +1,10 @@
 The
-[http://en.wikipedia.org/wiki/File:David_Niven_Allan_Warren.jpg|David Niven]
+[[http://en.wikipedia.org/wiki/File:David_Niven_Allan_Warren.jpg|David Niven]]
 of  mustache template languages for javascript.
 
 There are quite a few mustache implementations for Javascript and
 jQuery. Most implement a rich set  of the
-[http://mustache.github.com/|mustache syntax]. That's great but some
+[[http://mustache.github.com/|mustache syntax]]. That's great but some
 people (including me) don't want all that. I prefer to do conditionals
 and loops in my javascript, not in my template language. 
 
