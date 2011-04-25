@@ -17,7 +17,7 @@ So tache only implements interpolation. Here is an example web page:
 <html>
 <head>
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
- <script type="text/javascript" src="http://tache"></script>
+ <script type="text/javascript" src="https://github.com/woome/tache/raw/release_201104250234/jquery.tache.js"></script>
 </head>
 <body>
  <script>
@@ -32,6 +32,13 @@ So tache only implements interpolation. Here is an example web page:
 }}}
 
 That's all it does.
+
+== Downloading ==
+
+You can use straight out of github for now, as in the above HTML. If
+there's a lot of usage I will move hosting elsewhere.
+
+== Specification ==
 
 The formal specification is:
 
