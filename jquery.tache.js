@@ -11,7 +11,7 @@
  *
  *   jQuery.tache('<a href="{{url}}" title="{{name}}">{{name}}</a>', {
  *            url: "http://github.com/woome/tache",
- *            name="tache - the simple mustache template"
+ *            name: "tache - the simple mustache template"
  *            }
  *         );
  */
